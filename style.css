@@ -183,7 +183,6 @@ button {
 
 .lang div:nth-last-of-type(1) {
   flex-basis: 24px;
-  width: 24px;
 }
 
 .world {
@@ -809,6 +808,7 @@ ul {
   width: 100%;
   box-sizing: border-box;
   align-items: center;
+  justify-content: center;
 }
 
 .team_con {

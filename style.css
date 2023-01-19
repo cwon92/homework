@@ -1,0 +1,974 @@
+html {
+  background-color: #5383E8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  display: block;
+}
+
+.header_ {
+  min-width: 1080px;
+}
+
+.bar1 {
+  position: relative;
+  height: 40px;
+  padding-left: 98px;
+  display: flex;
+  background-color: #28344e;
+  align-items: center;
+}
+
+.bar1 h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98px;
+  height: 40px;
+  background-color: #5383E8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.bar1 h1 a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.bar1 nav {
+  flex: 1;
+}
+
+nav {
+  display: block;
+}
+
+.bar1 nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bar1 nav ul li:nth-of-type(1) {
+  padding: 0 12px 0 0;
+  background-color: #5383E8;
+}
+
+.bar1 nav ul li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.bar1 nav ul li:nth-last-of-type(1) {
+  color: #FFF;
+}
+
+.bar1 nav ul li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar1 nav ul li span span {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #FFF;
+}
+
+.bar1 nav ul li>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c3cbd1;
+  height: 32px;
+  line-height: 32px;
+  margin: 4px;
+  padding: 0 8px;
+}
+
+.bar1 nav ul li>a>span {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.bal {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffb900;
+  color: #28344e;
+}
+
+.deo {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+}
+
+.deo_but {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #28344e;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  margin: 0;
+}
+
+.weather {
+  width: 24px;
+  height: 24px;
+  background: url(https://s-lol-web.op.gg/images/icon/icon-lightmode.svg);
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.lang div:nth-last-of-type(1) {
+  flex-basis: 24px;
+  width: 24px;
+}
+
+.world {
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.lang_ko {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lang_ko div button {
+  background: none;
+  border: none;
+  padding: 0 23px 0 8px;
+  height: auto;
+}
+
+.lang_but {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.lang_ko div button span {
+  color: #c3cbd1;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.lang_but span {
+  line-height: 20px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.login {
+  margin: 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.login_but {
+  display: block;
+  padding: 4px 16px;
+  line-height: 18px;
+  font-size: 12px;
+  background-color: #5383E8;
+  color: #FFF;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  background-color: #5383E8;
+  border-bottom: 1px solid #4171D6;
+}
+
+.route {
+  margin-bottom: -3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 1080px;
+}
+
+.route_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.route_item:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.route_home {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  color: #FFF;
+  border-bottom: 3px solid #FFF;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.route_item {
+  margin-left: 24px;
+}
+
+.route_champ {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  color: #b3cdff;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.game_mode {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  color: #00fede;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.top_ad {
+  display: block;
+  width: 100%;
+  color: #202D37;
+  background-color: #ffb900;
+}
+
+.top_ad a {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  width: 1080px;
+  font-size: 14px;
+  min-height: 40px;
+  line-height: 40px;
+  padding: 0;
+}
+
+.top_ad a:hover {
+  text-decoration: underline;
+}
+
+
+
+.main_top {
+  display: block;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.main_img {
+  margin: 56px 0 46px;
+  display: block;
+}
+
+.main_img img {
+  display: block;
+  max-height: 224px;
+  margin: 0 auto;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.search_container {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+.searchbar {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 19%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  height: 60px;
+  text-align: left;
+  margin-top: 0em;
+}
+
+.down {
+
+  margin-top: 24px;
+  align-items: center;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  border: 0 none;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+.down a {
+  background: #202D37;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  border: 0 none;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.main_ad {
+  width: 100%;
+  min-height: 250px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background: #FFF;
+  border-radius: 4px;
+  padding: 8px 0;
+}
+
+.main_ad a {
+  min-width: 728px;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.geassipal {
+  display: flex;
+  width: 1080px;
+  margin: 36px auto 0px;
+  box-sizing: border-box;
+}
+
+.geassipal > :first-of-type {
+  flex-basis: 536px;
+  margin-right: 8px;
+}
+
+.geassipal section {
+  background-color: #FFF;
+  border-radius: 4px;
+  min-height: 405px;
+}
+
+.inkki {
+  flex-basis: 536px;
+  margin-right: 8px;
+  background-color: #FFF;
+  border-radius: 4px;
+  min-height: 405px;
+  width: 100%;
+  display: block;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.inkki h2 a {
+  display: block;
+  padding: 17px 0px 16px 20px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.community {
+  padding-bottom: 13px;
+  display: flex;
+  flex-flow: column wrap;
+}
+article {
+  display: block;
+}
+
+.community article {
+  width: 100%;
+}
+.article {
+  box-sizing: border-box;
+}
+
+.article:nth-of-type(1) a{
+  border-top: 0 none;
+}
+
+.article a {
+  padding: 12px 0;
+  margin: 0 12px;
+  border-color: #ebeef1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.art_num {
+  display: block;
+  flex-basis: 55px;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.thumb {
+  height: 56px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  flex-basis: 100px;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+div {
+  display: block;
+}
+.text {
+  flex: 1 1 0%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.text_title {
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text_c {
+  color: #202D37;
+}
+
+.count {
+  margin-left: 4px;
+  color: #5383e8;
+}
+
+.meta {
+  margin-top: 6px;
+  color: rgb(135, 146, 146);
+  line-height: 15px;
+  font-size: 12px;
+  list-style: none;
+}
+
+.meta li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.geassipal > :last-of-type {
+  flex-grow: 1;
+  max-width: 536px;
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+}
+
+.esports {
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid;
+  border-color: #ebeef1;
+}
+
+.esports_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.esports_title h2 {
+  height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.esports_title h3 {
+  margin-top: 8px;
+  color: #202d37;
+  font-size: 14px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.esports_title h3 a {
+  color: #202d37;
+  box-sizing: border-box;
+}
+
+.esports_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  box-sizing: border-box;
+  color: #202d37;
+}
+
+.esports_main {
+  display: flex;
+  flex-grow: 1;
+  box-sizing: border-box;
+  color: #202d37;
+}
+
+.esports_main > div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  color: #202d37;
+}
+
+.menu {
+  width: 100%;
+  height: 58px;
+  padding: 8px 12px 0;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-color: #ebeefe;
+  box-sizing: border-box;
+}
+
+.menu h4 {
+  font-size: 14px;
+}
+
+.menu nav {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: #202d37;
+}
+
+.active {
+  border-top-color: ;
+  border-right-color: ;
+  border-left-color: ;
+  color: #4171D6;
+  border-bottom: 2px solid;
+}
+
+.team_match ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  box-sizing: border-box;
+  color: #202D37;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team_border {
+  border-color: #ebeef1;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  height: 0;
+  min-height: 52px;
+  box-sizing: border-box;
+}
+
+.team_border * {
+  font-weight: bold;
+}
+
+.team_border a {
+  display: table;
+  width: 100%;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing: 8px 0;
+}
+
+.esports_rank {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  width: 15px;
+}
+
+.team_border > a div {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 12px;
+  text-align: center;
+}
+
+.team_logo {
+  width: 20px;
+}
+
+.team_border img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  object-fit: contain;
+}
+
+.esports_name {
+  text-align: left;
+  color: #202d37;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.win {
+  width: 48px;
+  color: #202d37;
+  box-sizing: border-box;
+}
+
+.team_border * {
+  color: #202d37;
+  box-sizing: border-box;
+}
+
+.team_point {
+  width: 20px;
+}
+
+.team_border .esports_name {
+  text-align: left;
+}
+
+.match .today {
+  border-left: 1px solid;
+  border-color: #ebeef1;
+}
+
+.menu span {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 7px;
+}
+
+.today ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+}
+
+.firstmatch {
+  padding: 34px 20px 31px;
+  height: 158px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  color: #202d37;
+}
+
+.firstmatch a {
+  width: 100%;
+  display: inline-flex;
+  place-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  color: #202d37;
+}
+
+.firstmatch a div {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.team_con {
+  flex-grow: 1;
+  min-width: max-content;
+  white-space: nowrap;
+  flex-basis: 0;
+}
+
+.team_con img {
+  object-fit: contain;
+}
+
+.firstmatch .score {
+  flex-basis: 77px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.not_started {
+  width: 77px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 12px;
+  border-color: #dbe0e4;
+  text-align: center;
+  justify-content: center;
+}
+
+.firstmatch a > div + div {
+  margin-top: 10px;
+}
+
+.matchday {
+  font-size: 12px;
+  color: #9aa4af;
+}
+
+.matchtime {
+  white-space: pre;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot {
+  min-width: 1080px;
+  margin-top: 48px;
+  padding: 48px 0;
+  display: block;
+}
+
+.foot >div {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.foot section {
+  display: flex;
+}
+
+.title {
+  margin-left: 0;
+  flex-basis: 170px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.title img {
+  width: 99px;
+  height: 24px;
+}
+
+.title a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.foot section:first-of-type >* {
+  flex-basis: 170px;
+  margin-left: 12px;
+  display: block;
+
+}
+
+.foot section:first-of-type nav a {
+  margin-top: 0;
+  font-size: 14px;
+  color: #FFF;
+  width: 100%;
+  line-height: 20px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.foot section:last-of-type {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid;
+  border-color: #dbe0e4;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+}
+
+.foot section:last-of-type small {
+  color: #fff;
+}
+
+.foot small {
+  font-size: 12px;
+}
+
+.foot section:last-of-type nav {
+  display: flex;
+}
+
+.foot section:last-of-type nav a {
+  margin-left: 0;
+  vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.geassipal {
+  display: flex;
+  width: 1080px;
+  margin: 36px auto 0;
+  box-sizing: border-box;
+}
+
+.geassipal > :first-of-type {
+  flex-basis: 536px;
+  margin-right: 8px;
+}
+
+.geassipal section {
+  background-color: #fff;
+  border-radius: 4px;
+  min-height: 405px;
+}
+

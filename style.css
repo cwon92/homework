@@ -1088,6 +1088,9 @@ ul {
   margin-left: 12px;
 }
 
+.foot section:first-of-type div nav a img {
+  margin-left: 8px;
+}
 .geassipal {
   display: flex;
   width: 1080px;
